@@ -1,6 +1,6 @@
 @echo off
+TITLE master_control
 echo # Uncomment lines 3-11 to make power config changes to Windows
-REM TITLE ## Workstation Setup Menu ##
 REM powercfg /h off
 REM powercfg /change monitor-timeout-ac 60
 REM powercfg /change monitor-timeout-dc 15
@@ -54,4 +54,4 @@ IF /I EXIST "C:\Users\Public\Desktop\Acrobat Reader DC.lnk" del "C:\Users\Public
 reg add HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce\ /v "KyrusSetup" /t REG_SZ /d "C:\Windows\Temp\user_setup.bat"
 copy %DRIVE%:\config\user_setup.bat C:\Windows\Temp\
 echo.
-shutdown -r -t 30 /c "Setup Complete: Leave the USB connected when logging in as the user."
+REM shutdown -r -t 30 /c "Setup Complete: Leave the USB connected when logging in as the user."

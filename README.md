@@ -1,5 +1,5 @@
 # mascon
-MasCon (formerly 'master_control') is a massive batch file I used to standardize local computer installations with the help of network shares or desktop software deployments.
+MasCon (formerly 'master_control') is a massive batch file I used to standardize local computer installations without the help of network shares or desktop software deployments.
 
 I kept the script on USB drives with a folder structure of configurations, installers, group policies (LGPO), and whatever I else I could cram into a batch or powershell.
 
